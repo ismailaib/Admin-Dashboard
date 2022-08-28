@@ -1,0 +1,47 @@
+/*     MEDIA QUERY  ????  SIDEBAR  ????    */
+@media screen and (max-width: 1200px){
+    .container {
+        width: 95%;
+        grid-template-columns:7rem auto 23rem ;
+    }
+
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        grid-template-columns:7rem auto 23rem ;
+    }
+    aside {
+        position: fixed;
+        left: 0;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        display: none;
+    }
+    aside .logo {
+        margin-left: 1rem;
+    }
+    aside .logo h2 {
+        display: inline;
+    }
+    aside .sidebar h3 {
+        display: inline;
+    }
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
