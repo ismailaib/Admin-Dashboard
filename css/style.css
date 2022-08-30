@@ -25,6 +25,16 @@
 
 
 }
+/*     DARK THEME VARIABLES    */
+.dark-theme-variales{
+    --color-white : #000000 ;
+    --color-dark : #ffffff ;
+    --color-light : rgba(0, 0, 0.4) ;
+    --color-background : #181a1e ;
+    --color-dark-variant : #a3bdcc ;
+    --box-shadow :0 2rem 3rem var(--color-light) ;
+
+}
 * {
     margin: 0;
     padding: 0;
