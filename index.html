@@ -26,11 +26,11 @@
             </div>            </div>
 
             <div class="sidebar">
-                <a href="#">
+                <a href="#" class="active">
                     <span class="material-symbols-outlined">space_dashboard</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="#" class="active">
+                <a href="#" class="">
                     <span class="material-symbols-outlined">groups</span>
                     <h3>Customers</h3>
                 </a>
@@ -47,7 +47,7 @@
                 <a href="#">
                     <span class="material-symbols-outlined">chat</span>
                     <h3>Messages</h3>
-                    <span class="message-count">26</span>
+                    <span class="message-count">0</span>
                 </a>
                 <a href="#">
                     <span class="material-symbols-outlined">inventory_2</span>
@@ -121,7 +121,7 @@
                 <div class="middle">
                     <div class="lef">
                         <h3>Total income</h3>
-                        <h1>$10,24</h1>
+                        <h1>$10,240</h1>
                     </div>
                     <div class="progress">
                         <svg>
@@ -139,7 +139,7 @@
                 <!---------- END OF INSIGHTS ----------->
         <div class="recent-orders">
             <h2>Recent Order</h2>
-            <table>
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Product Name</th>
@@ -149,8 +149,8 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody> 
-
+                <tbody id="myTable"> 
+                </tbody>    
             </table>
             <a href="#">Show All</a>
         </div>        

@@ -29,7 +29,7 @@
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
-        box-shadow: 1rem 3rem 4rem var(--color-light);
+        box-shadow: 0 0rem 1rem var(--color-light);
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
@@ -116,7 +116,7 @@
         width: 100%;
         margin: 0;
         z-index: 2;
-        box-shadow: 0 1rem 1rem var(--color-light);
+        box-shadow: 0 0rem 1rem var(--color-light);
     }
     .right .top .theme-toggler {
         width: 4.4rem;

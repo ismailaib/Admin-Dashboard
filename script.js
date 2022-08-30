@@ -17,16 +17,3 @@ themeToggler.addEventListener('click', () => {
     themeToggler.querySelector('span').classList.toggle('active');
 })  
 
-Orders.forEach(order => {
-    const tr = document.createElement('tr');
-    const trContent = `
-                        <td>${order.productName}</td>
-                        <td>${order.productNumber}</td>
-                        <td>${order.paymentstatus}</td>
-                        <td class="${order.shipping === 'Declined' ? 'danger' : order.shipping === 'pending' ? 'warning' : 'primary'}">${order.shiping}</td>
-                        <td class="primary">Details</td>
-                        `;
-    tr.innerHTML = trContent;
-    document.querySelector('table tbody').appendChild(tr);
-
-    })

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&family=Signika&display=swap');
 :root {
 
     --color-primary : #2b91d1 ;
@@ -29,10 +30,10 @@
 .dark-theme-variales{
     --color-white : #000000 ;
     --color-dark : #ffffff ;
-    --color-light : rgba(0, 0, 0.4) ;
+    --color-light : rgb(56, 52, 52) ;
     --color-background : #181a1e ;
     --color-dark-variant : #a3bdcc ;
-    --box-shadow :0 2rem 3rem var(--color-light) ;
+    --color-info-light : rgb(26, 23, 23);
 
 }
 * {
@@ -55,10 +56,22 @@ body {
     font-size: 0.88rem;
     background: var(--color-background);
     color: var(--color-dark);
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    font-family: 'secular one', sans-serif;
 }
-
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-light);
+}
 .container {
     display: grid;
     width: 96%;
@@ -78,21 +91,25 @@ img {
 
 h1 {
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
 }
 
 h2 {
     font-size: 1.4rem;
+    font-family: 'Sinika', sans-serif;
 }
 
 h3 {
     font-size: 0.87rem;
+    font-family: 'Roboto', sans-serif;
 }
 h5 {
     font-size: 0.55rem;
+    font-family: 'Roboto', sans-serif;
 }
 small {
     font-size: 0.75rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .profile-photo {
@@ -104,14 +121,17 @@ small {
 
 .text-muted {
     color: var(--color-info-light);
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
     color: var(--color-dark-variant);
+    font-family: 'Roboto', sans-serif;
 }
 
 b {
     color: var(--color-dark);
+    font-family: 'Roboto', sans-serif;
 }
 
 .primary {
@@ -131,13 +151,14 @@ b {
 
 aside {
     height: 100vh;
+    background: var(--color-info-light);
 }
 
 aside .top {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 1.4rem;
+    margin-top: 1.4rem;   
 }
 
 aside .logo {
@@ -156,6 +177,7 @@ aside .close {
 
 
 aside .sidebar {
+    display: flex;
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -248,13 +270,9 @@ main .insights > div {
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
     transition: all 300ms ease;
 }
 
-main .insights > div:hover {
-    box-shadow: none;
-}
 
 main .insights > div span {
     background: var(--color-primary);
@@ -340,12 +358,8 @@ main .recent-orders table {
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     text-align: center;
-    box-shadow:  var(--box-shadow)  ;
-    transition: all 300ms ease;
 }
-main .recent-orders table:hover {
-    box-shadow: none;
-}
+
 main table tbody td {
     height: 2.8rem;
     border-radius: 1px solid var(--color-light);
@@ -413,12 +427,8 @@ main .recent-orders a {
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius:var(--card-border-radius) ;
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
 }
-.right .recent-updates .updates:hover{
-    box-shadow: none;
-}
+
 .right .recent-updates .updates .update {
     display: grid;
     grid-template-columns: 2.6rem auto;
@@ -440,12 +450,8 @@ main .recent-orders a {
     margin-bottom: 0.7rem;
     padding: 1.4rem var(--card-padding);
     border-radius: var(--border-radius-3);
-    box-shadow: var(--box-shadow);
-    transition: all 300ms ease;
 }
-.right .sales-analytics .item:hover {
-    box-shadow: none;
-}
+
 .right .sales-analytics .item .right {
     display: flex;
     justify-content: space-between;
